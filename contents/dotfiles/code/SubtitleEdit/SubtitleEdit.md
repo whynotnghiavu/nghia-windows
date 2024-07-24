@@ -1,0 +1,1 @@
+https://github.com/SubtitleEdit/subtitleedit/releases/tag/3.6.13
