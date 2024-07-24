@@ -7,16 +7,12 @@ Mo ta cac cong viec UBUNTU (Khong go VN)
 
 [Tải xuống download.ps1](contents/dotfiles/others/download/download.ps1)
 
-
-
- 
 <!--  -->
+
 # Tham khảo submodule
 
-
-git submodule add https://github.com/anishathalye/dotbot     contents/dotbot
+git submodule add https://github.com/anishathalye/dotbot contents/dotbot
 git config -f .gitmodules submodule.contents/dotbot.ignore dirty
-
 
 <!--  -->
 
@@ -28,7 +24,6 @@ Windows
 <!-- [text](contents/dotfiles/code/chocolatey/chocolatey.md) -->
 <!-- [text](contents/dotfiles/code/powertoys/powertoys.ps1) -->
 
-
 <!--  -->
 
 choco install ffmpeg -y
@@ -37,7 +32,6 @@ choco install ffmpeg -y
 
 <!-- SqlServer -->
 <!-- Office -->
-
 
 <!--  -->
 <!--  -->
@@ -58,7 +52,9 @@ choco install ffmpeg -y
 <!--  -->
 
 [latex](contents/dotfiles/code/latex/latex.md)
+
 <!--  -->
+
 [docker](contents/dotfiles/code/docker/docker.md)
 
 <!--  -->
