@@ -1,0 +1,184 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ["~"]
+
+- create:
+    - ~/Downloads/Nghia
+    - ~/Downloads/Nghia/Git
+    - ~/Downloads/Nghia/Programs
+    - ~/Downloads/Nghia/Theme
+
+# - link:
+#     ~/Desktop/autostart: ~/.config/autostart
+
+# - create:
+#     - ~/Desktop/test_nghia
+
+- shell:
+    - command: python dotfiles\code\windows_registry_theme\windows_registry_theme.py
+      description: Setting black theme
+      stdout: true
+      stderr: true
+
+    # - command: python        dotfiles\code\windows_registry_time_zone\windows_registry_time_zone.py
+    #   description: python        dotfiles\code\windows_registry_time_zone\windows_registry_time_zone.py
+    #   stdout: true
+    #   stderr: true
+
+    - command: python dotfiles\code\windows_registry_file_extensions\windows_registry_file_extensions.py
+      description: Enable show file extensions
+      stdout: true
+      stderr: true
+
+    - command: python dotfiles\code\windows_registry_hidden_items\windows_registry_hidden_items.py
+      description: Enable showing hidden items in Windows Explorer
+      stdout: true
+      stderr: true
+
+    - command: python dotfiles\code\windows_registry_clipboard_history\windows_registry_clipboard_history.py
+      description: Enable Clipboard history feature
+      stdout: true
+      stderr: true
+
+    - command: powershell -ExecutionPolicy ByPass -File  dotfiles\code\wallpaper\wallpaper.ps1
+      description: Change Desktop Wallpaper
+      stdout: true
+      stderr: true
+
+    - command: powershell -ExecutionPolicy ByPass -File  dotfiles\code\Startup\Startup.ps1
+      description: Startup
+      stdout: true
+      stderr: true
+
+
+    - command: powershell -ExecutionPolicy ByPass -File  dotfiles\code\ChangeIconSize\ChangeIconSize.ps1
+      description: ChangeIconSize
+      stdout: true
+      stderr: true
+
+    - command: powershell -ExecutionPolicy ByPass -File  dotfiles\code\RestartExplorer\RestartExplorer.ps1
+      description: RestartExplorer
+      stdout: true
+      stderr: true
+
+
+
+
+- shell:
+    # - command:   powershell -ExecutionPolicy ByPass -File  dotfiles\code\chocolatey\chocolatey.ps1
+    #   description: powershell -ExecutionPolicy ByPass -File  dotfiles\code\chocolatey\chocolatey.ps1
+    #   stdout: true
+    #   stderr: true
+
+    - command: choco --version
+      description: choco --version
+      stdout: true
+      stderr: true
+    # - shell:
+    #     - command:   powershell -ExecutionPolicy ByPass -File  dotfiles\code\everything\everything.ps1
+    #       description: powershell -ExecutionPolicy ByPass -File  dotfiles\code\everything\everything.ps1
+    #       stdout: true
+    #       stderr: true
+
+    # - shell:
+    #     - command:   powershell -ExecutionPolicy ByPass -File  dotfiles\code\googlechrome\googlechrome.ps1
+    #       description: powershell -ExecutionPolicy ByPass -File  dotfiles\code\googlechrome\googlechrome.ps1
+    #       stdout: true
+    #       stderr: true
+
+- shell:
+    # - command: powershell -ExecutionPolicy ByPass -File  dotfiles\code\python\python.ps1
+    #   description: powershell -ExecutionPolicy ByPass -File  dotfiles\code\python\python.ps1
+    #   stdout: true
+    #   stderr: true
+
+    - command: python --version
+      description: python --version
+      stdout: true
+      stderr: true
+
+- shell:
+    # - command:   powershell -ExecutionPolicy ByPass -File  dotfiles\code\git\git.ps1
+    #   description: powershell -ExecutionPolicy ByPass -File  dotfiles\code\git\git.ps1
+    #   stdout: true
+    #   stderr: true
+
+    - command: git --version
+      description: git --version
+      stdout: true
+      stderr: true
+
+- shell:
+    # - command:   powershell -ExecutionPolicy ByPass -File  dotfiles\code\vscode\.ps1
+    #   description: powershell -ExecutionPolicy ByPass -File  dotfiles\code\vscode\vscode.ps1
+    #   stdout: true
+    #   stderr: true
+
+    - command: code --version
+      description: code --version
+      stdout: true
+      stderr: true
+
+ 
+    # - shell:
+    #     - command:   powershell -ExecutionPolicy ByPass -File  dotfiles\code\virtualbox\virtualbox.ps1
+    #       description: powershell -ExecutionPolicy ByPass -File  dotfiles\code\virtualbox\virtualbox.ps1
+    #       stdout: true
+    #       stderr: true
+ 
+    # - shell:
+    #     - command:   powershell -ExecutionPolicy ByPass -File  dotfiles\code\FoxitPDFReader\FoxitPDFReader.ps1
+    #       description: powershell -ExecutionPolicy ByPass -File  dotfiles\code\FoxitPDFReader\FoxitPDFReader.ps1
+    #       stdout: true
+    #       stderr: true
+
+
+
+    
+    # - shell:
+    #     - command:   powershell -ExecutionPolicy ByPass -File  dotfiles\code\obs-studio\obs-studio.ps1
+    #       description: powershell -ExecutionPolicy ByPass -File  dotfiles\code\obs-studio\obs-studio.ps1
+    #       stdout: true
+    #       stderr: true
+
+
+
+    
+    # - shell:
+    #     - command:   powershell -ExecutionPolicy ByPass -File  dotfiles\code\winrar\winrar.ps1
+    #       description: powershell -ExecutionPolicy ByPass -File  dotfiles\code\winrar\winrar.ps1
+    #       stdout: true
+    #       stderr: true
+
+
+
+    
+    
+    # - shell:
+    #     - command:   powershell -ExecutionPolicy ByPass -File  dotfiles\code\unikey\unikey.ps1
+    #       description: powershell -ExecutionPolicy ByPass -File  dotfiles\code\unikey\unikey.ps1
+    #       stdout: true
+    #       stderr: true
+
+
+
+    
+    
+    # - shell:
+    #     - command:   powershell -ExecutionPolicy ByPass -File  dotfiles\code\autohotkey\autohotkey.ps1
+    #       description: powershell -ExecutionPolicy ByPass -File  dotfiles\code\autohotkey\autohotkey.ps1
+    #       stdout: true
+    #       stderr: true
+ 
+    
+    # - shell:
+    #     - command:   powershell -ExecutionPolicy ByPass -File  dotfiles\code\powertoys\powertoys.ps1
+    #       description: powershell -ExecutionPolicy ByPass -File  dotfiles\code\powertoys\powertoys.ps1
+    #       stdout: true
+    #       stderr: true
+
+
+
+    
