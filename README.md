@@ -7,6 +7,17 @@ Mo ta cac cong viec UBUNTU (Khong go VN)
 
 [Tải xuống download.ps1](contents/dotfiles/others/download/download.ps1)
 
+
+
+ 
+<!--  -->
+# Tham khảo submodule
+
+
+git submodule add https://github.com/anishathalye/dotbot     contents/dotbot
+git config -f .gitmodules submodule.contents/dotbot.ignore dirty
+
+
 <!--  -->
 
 Hướng dẫn Windows PowerShell

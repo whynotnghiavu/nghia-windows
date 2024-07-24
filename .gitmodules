@@ -1,3 +1,4 @@
 [submodule "contents/dotbot"]
 	path = contents/dotbot
 	url = https://github.com/anishathalye/dotbot
+	ignore = dirty
