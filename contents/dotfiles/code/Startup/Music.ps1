@@ -51,13 +51,17 @@ if (-Not (Test-Path -Path $tempInMusicFolderPath)) {
 # Create Music shortcut on Desktop
 Write-Host "Create Music shortcut on Desktop"
 
+$desktopPath = [System.IO.Path]::Combine($env:USERPROFILE, "Desktop")
+Write-Host "desktopPath: $desktopPath"
 $musicShortcutPath = [System.IO.Path]::Combine($desktopPath, "Music.lnk")
 Write-Host "musicShortcutPath: $musicShortcutPath"
 
+
+$wshell = New-Object -ComObject WScript.Shell
 $shortcut = $wshell.CreateShortcut($musicShortcutPath)
 $shortcut.TargetPath = $musicFolderPath
 $shortcut.WorkingDirectory = $musicFolderPath
 $shortcut.WindowStyle = 1
-$shortcut.Description = "Shortcut to Music Folder"
-$shortcut.IconLocation = "shell32.dll, 239"
+$shortcut.Description = "Shortcut to Startup Folder"
+$shortcut.IconLocation = "shell32.dll, 34"
 $shortcut.Save()
