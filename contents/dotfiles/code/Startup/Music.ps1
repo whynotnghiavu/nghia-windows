@@ -1,4 +1,11 @@
- 
+
+
+
+
+
+
+
+
 # Create Nghia folder in Downloads
 Write-Host "Create Nghia folder in Downloads"
 
@@ -28,16 +35,17 @@ if (-Not (Test-Path -Path $musicFolderPath)) {
 }
 
 # Create temp folder in Music
+Write-Host "Create temp folder in Music"
 
+$tempInMusicFolderPath = [System.IO.Path]::Combine($musicFolderPath, "temp")
+Write-Host "tempInMusicFolderPath: $tempInMusicFolderPath"
 
-
-
-
-
-
-
-
-
+if (-Not (Test-Path -Path $tempInMusicFolderPath)) {
+    New-Item -ItemType Directory -Path $tempInMusicFolderPath -Force
+    Write-Output "The folder 'temp' has been created in Music at: $tempInMusicFolderPath"
+} else {
+    Write-Output "The folder 'temp' already exists in Music at: $tempInMusicFolderPath"
+}
 
 
 # Create Music shortcut on Desktop
